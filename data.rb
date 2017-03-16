@@ -34,7 +34,3 @@ ANSWERS = [
   "Перспективы не очень хорошие",
   "Весьма сомнительно"
 ]
-
-def cls
-  system("clear") || system("cls")
-end

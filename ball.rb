@@ -1,13 +1,15 @@
-p require_relative "data"
+require_relative "data"
+
+def cls
+  system("clear") || system("cls")
+end
 
 cls
 puts "#{GREETINGS.sample}\n"
 
 puts "Вселенная подстраивается под ваши ожидания, осталось "
-sec = rand 10
-puts "#{sec.to_s} с."
-1.upto(sec) do |n|
-  puts "#{(sec - n).to_s} с."
+rand(10).downto(0) do |n|
+  puts "#{n} с."
   sleep(1)
 end
 
