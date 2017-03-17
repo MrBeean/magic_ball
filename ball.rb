@@ -5,7 +5,7 @@ def cls
 end
 
 cls
-puts "#{GREETINGS.sample}\n"
+puts GREETINGS.sample
 
 puts "Вселенная подстраивается под ваши ожидания, осталось "
 rand(10).downto(0) do |n|
@@ -13,4 +13,4 @@ rand(10).downto(0) do |n|
   sleep(1)
 end
 
-puts "\nМой ответ: #{ANSWERS.sample}"
+puts ANSWERS.sample
